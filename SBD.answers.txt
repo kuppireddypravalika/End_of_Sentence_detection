@@ -1,0 +1,66 @@
+My program is complete as per the requirements and by using 5 features accuracy is around 90% 
+
+ -------------with 5 features
+Accuracy: 90.39%
+              precision    recall  f1-score   support
+
+           0       0.97      0.63      0.76      2059
+           1       0.89      0.99      0.94      6311
+
+    accuracy                           0.90      8370
+   macro avg       0.93      0.81      0.85      8370
+weighted avg       0.91      0.90      0.90      8370
+
+[[1299  760]
+ [  44 6267]]
+
+1.	Three additional features are --I used an abbreviations list to check whether L is in that list or not , and I also checked whether  L is only punctuation or not and another feature I used is to check whether L captilised or not generally if L is capital means then it likely a noun that starts with ‘capital’ letter .
+
+Examples for my features are: 1)Mr.  ,2)   ).  3) New York.(Y is capital here as it is noun)
+
+2.	My program is complete and the accuracy of my system on the test data using all eight features (5 core + 3 own ) is 98.84%
+
+Variations in accuracy and f1score I saw using different feaures:
+ -----------
+ Accuracy: 90.56%
+              precision    recall  f1-score   support
+
+           0       0.97      0.64      0.77      2059
+           1       0.89      0.99      0.94      6311
+
+    accuracy                           0.91      8370
+   macro avg       0.93      0.81      0.85      8370
+weighted avg       0.91      0.91      0.90      8370
+
+[[1310  749]
+ [  41 6270]]
+----------------------------------------
+Including all features 
+C:\Users\aprav\OneDrive\Desktop\CIS-511-NLP(Natural Language Processing)\QUESTION1>python draft1.py SBD.train SBD.test
+Accuracy: 98.841%
+              precision    recall  f1-score   support
+
+           0       0.98      0.97      0.98      2059
+           1       0.99      0.99      0.99      6311
+
+    accuracy                           0.99      8370
+   macro avg       0.99      0.98      0.98      8370
+weighted avg       0.99      0.99      0.99      8370
+
+--------------------------------------
+[[2003   56]
+ [  41 6270]]
+
+C:\Users\aprav\OneDrive\Desktop\CIS-511-NLP(Natural Language Processing)\QUESTION1>
+------------------------------------------------------------
+
+
+I’m assuming this accuracy is correct because I used to check the accuracy with other parameters like f1-score and matrix it keeps improving for me
+
+
+NOTE: I just used these extra parameters for my own understanding and just to show the variation in accuracy after changing a few features. I did not include this in the original .py program or .txt program please consider this.
+i only submited the acuracy of the system with different ans in screenshorts.
+
+
+
+

@@ -1,0 +1,115 @@
+
+README DOCUMENT FOR QUESTION.2:
+
+I followed the following steps:
+
+Steps 1: I have input from the command line argument and used readlines()to read input as lines
+
+Step 2: Here I counted the total number of unigrams and the total number of bigrams and dictionaries of  unigrams and their corresponding values,same as I have did for the bigram count
+
+Step 3: Here I called for chi-square and PMI functions based on the given measure 
+
+Step 4 : For both chi-square and PMI try using the original formula thought by the professor in class chi-square==χ2 = ∑(Oi – Ei)2/Ei 
+Where O is observed frequencies and E is expected frequencies
+And for PMI(w1,W2)=ln(p(W1W2)/(p(W1)p(W2)))
+
+Step 5 After getting the values I tried to sort and reverse the sorted values and printed the top 20 values for both PMI and chi-square
+
+**PlEASE CHECK THE SCREENSHORTS******
+-----------------------------------------------------------------------------------------------------------------------------
+
+C:\Users\aprav\OneDrive\Desktop\CIS-511-NLP(Natural Language Processing)\QUESTION2>python Collocations.py Collocations chi-square
+Brenda Malizia: 430122.00000000006
+Malizia Negus: 430122.00000000006
+Golf Course: 430122.00000000006
+Desert Inn: 430122.00000000006
+multi-spired castle-like: 430122.00000000006
+Traveling Abroad: 430122.00000000006
+Three-month T-bill: 430122.00000000006
+Competing asset-allocation: 430122.00000000006
+Mill Playhouse: 430122.00000000006
+Perfect Witness: 430122.00000000006
+Stockard Channing: 430122.00000000006
+Final Days: 430122.00000000006
+Brideshead Revisited: 430122.00000000006
+schizoid horror: 430122.00000000006
+Performances kicks: 430122.00000000006
+Polished hooves: 430122.00000000006
+Shiny Nikes: 430122.00000000006
+Glory Enough: 430122.00000000006
+Ku Klux: 430122.00000000006
+Klux Klan: 430122.00000000006
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+For PMI
+C:\Users\aprav\OneDrive\Desktop\CIS-511-NLP(Natural Language Processing)\QUESTION2>python Collocations.py Collocations PMI
+Golf Course: 18.646164907766163
+multi-spired castle-like: 18.646164907766163
+Traveling Abroad: 18.646164907766163
+Three-month T-bill: 18.646164907766163
+Competing asset-allocation: 18.646164907766163
+Mill Playhouse: 18.646164907766163
+Perfect Witness: 18.646164907766163
+Stockard Channing: 18.646164907766163
+Final Days: 18.646164907766163
+Brideshead Revisited: 18.646164907766163
+schizoid horror: 18.646164907766163
+Performances kicks: 18.646164907766163
+Polished hooves: 18.646164907766163
+Shiny Nikes: 18.646164907766163
+Glory Enough: 18.646164907766163
+Ku Klux: 18.646164907766163
+Klux Klan: 18.646164907766163
+Latest Period: 18.646164907766163
+slow-growth low-profit: 18.646164907766163
+limply constructed: 18.646164907766163
+
+====================================================================================
+
+I also tried to print the least 20 which was not part of our question but i just make sure my top bigrams are collocations 
+In least 20 i got mostly stop words in both chi-square and PMI so i feel my code is doing good as per given guidelines
+
+=====================================================================================
+==> I feel my program is complete because I can calculate the values for PMI and chi-square
+And able to print top 20
+
+=====================================================================================
+
+Summary of my observations:
+Both chi-square and PMI are helpful in identifying collocations giving good collocations.
+Chi-square: In chi-square, I observed it is calculating the most frequently occurring bigrams it may be helpful in large data sets. But sometimes it calculates high scores for some rarely occurring bigrams.
+PMI-Where as PMI calculates bigrams joint probability with their individual probabilities. So I feel it is detecting some meaningful collocations than the chi-square 
+Chi-square is more likely calculating the frequencies of bigrams and PMI is calculating meaningful bigrams and looks like collocations in real time.
+
+
+
+===============================================================================
+
+I tried printing reverse order of for both chi-square and PMI
+
+
+C:\Users\aprav\OneDrive\Desktop\CIS-511-NLP(Natural Language Processing)\QUESTION2>python Collocations.py Collocations PMI
+of to: -8.329616448985341
+to to: -8.27449089495969
+the the: -8.117056176503839
+a a: -7.85295094968325
+of in: -7.805190229890001
+in in: -7.225638456769011
+for to: -6.822941741877263
+said of: -6.429621381834855
+of said: -6.429621381834855
+will the: -6.397223732140825
+for in: -6.298515522781924
+of and: -6.267141412091186
+is and: -6.179786368535114
+to on: -6.169514090021576
+and The: -6.1675617371665465
+to in: -6.165102175143194
+he the: -6.152243161974897
+'s to: -6.033936544489638
+would the: -6.005740960840877
+in $: -5.923640183849943
+
+
+It looks like stop words
